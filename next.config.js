@@ -3,8 +3,13 @@ const withNextra = require("nextra")({
   themeConfig: "./theme.config.tsx",
 });
 
+// TODO: Remove once hosted from precept.sh via CNAME
+const basePath = process.env.NODE_ENV === "production" ? "/docs" : "";
+
 module.exports = {
   ...withNextra(),
+  basePath,
+  assetPrefix: basePath,
   images: {
     unoptimized: true,
   },
