@@ -28,6 +28,8 @@ jobs:
         run: yarn build
 
       - name: Publish
-        run: yarn publish -- --user "github-actions <support+actions@github.com>"
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          yarn publish --user "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
