@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "publish": "gh-pages --dist .next --nojekyll --cname precept.sh"
+    "publish": "gh-pages --dist out --nojekyll --cname precept.sh"
   },
   "repository": {
     "type": "git",
