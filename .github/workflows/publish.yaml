@@ -1,0 +1,30 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Node 20
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20
+
+      - uses: actions/checkout@v4.1.3
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: yarn ci
+
+      - name: Build
+        run: yarn build
+
+      - name: Publish
+        run: yarn publish -- --user "github-actions <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
