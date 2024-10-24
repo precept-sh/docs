@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "hugo server --buildDrafts --buildFuture --buildExpired",
-    "build": "hugo --minify",
+    "build": "hugo --gc --forceSyncStatic  --minify  --baseURL 'https://precept.sh/'",
     "publish": "gh-pages --dist public --nojekyll --cname precept.sh"
   },
   "devDependencies": {
