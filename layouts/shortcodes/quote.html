@@ -1,0 +1,16 @@
+<!-- Single item -->
+{{ $class := or (.Get "class") "" }}
+<div class="{{ $class }} p-4 my-auto">
+    <figure class="position-relative">
+        <blockquote class="blockquote mb-4">
+            <p>
+                <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                <span class="font-italic">{{ .Inner }}</span>
+            </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            {{ with .Get "href" }}<a href="{{ . }}" target="_blank" class="stretched-link"></a>{{ end }}
+            {{ .Get "author" }}{{ with .Get "source" }} in <cite title="{{ . }}">{{ . }}</cite>{{ end }}
+        </figcaption>
+    </figure>
+</div>

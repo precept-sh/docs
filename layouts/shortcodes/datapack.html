@@ -1,0 +1,24 @@
+{{ $channel := or (.Get "channel-icon") "fa-solid fa-questionmark" }}
+<div class="datapack td-card card border me-4">
+    <div class="card-header d-flex justify-content-end align-items-center">
+        <i class="{{ $channel }} flex-grow-1 p-2"></i>
+        <div class="d-flex flex-column align-items-end">
+            <div class="name">{{ .Get "name" }}</div>
+            <small class="by text-body-secondary">by {{ .Get "by" }}</small>
+        </div>
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{ .Inner -}}</p>
+    </div>
+    <div class="card-footer">
+        <div class="datapack-meta">
+            <small>{{ .Get "version" }}</small>
+            <small>⭐ {{ .Get "stars" }}/5</small>
+            <small>{{ .Get "installs" }}+ installs</small>
+        </div>{{ $channel = "" }}
+        <div>
+            {{ range split (.Get "tags") "," }}<span class="badge rounded-pill text-bg-light">{{ . }}</span>{{ end
+            }}
+        </div>
+    </div>
+</div>

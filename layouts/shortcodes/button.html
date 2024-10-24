@@ -1,0 +1,10 @@
+{{ $color := "" }}
+{{ if .Get "color" }}
+{{ $color = printf "btn-%s" (.Get "color") }}
+{{ end }}
+{{ $href := .Get "href" }}
+
+<a class="btn btn-lg {{ $color }} me-3 mb-4" href="{{ $href }}">
+    {{- .Inner -}}
+    {{- with .Get "icon" -}}<i class="{{ . }} ms-2"></i>{{- end -}}
+</a>
