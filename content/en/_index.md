@@ -128,7 +128,7 @@ Seamless authentication and user management with Auth0's powerful platform.
         stars="4.9"
         installs="8k"
         tags="Official,Storage,New" %}}
-Complete Stripe API integration with support for payments, subscriptions, and webhooks.
+Official AWS S3 integration with support for all S3 operations and event handling.
 {{% /datapack %}}
 
 {{< /cardpane >}}
