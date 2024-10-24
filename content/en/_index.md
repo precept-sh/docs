@@ -40,11 +40,11 @@ An ever growing marketplace of enterprise and community-built integrations makes
 With support for Intelligent caching, API calls can be reduced, improving performance, and helping keep within rate limits.
 {{% /blocks/feature %}}
 
-{{< quote class="col-6" author="Tom O'Reilly" source="LinkedIn" href="https://www.linkedin.com/posts/tworeilly_how-long-does-an-api-integration-take-activity-7255212477418729472-6zk-" >}}
+{{< quote class="col-lg-6" author="Tom O'Reilly" source="LinkedIn" href="https://www.linkedin.com/posts/tworeilly_how-long-does-an-api-integration-take-activity-7255212477418729472-6zk-" >}}
 Enabling features that would take months to build in-house has always been the promise of third-party integrations. But often the integration takes just as long, distracting your team from doing what you really need them to do.
 {{< /quote >}}
 
-<div class="col-6 py-2 px-6">
+<div class="col-lg-6 py-2 px-6">
 {{< figure src="/images/animated.svg" caption="<em>Leave the integration work to Precept. You've got more important things to do.</em>" >}}
 </div>
 
