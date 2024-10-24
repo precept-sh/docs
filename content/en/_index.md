@@ -5,7 +5,7 @@ title = 'Precept'
 
 {{< blocks/cover title="Introducing Precept" image_anchor="top" height="full" >}}
 
-One unified interface for all your API integrations
+One unified interface for all your API integrations.
 
 Stop juggling multiple API implementations. Start building with a single, consistent interface.
 { .mb-5 }
@@ -37,7 +37,7 @@ An ever growing marketplace of enterprise and community-built integrations makes
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-solid fa-hard-drive" title="Smart Caching" url="/docs/cache" %}}
-With support for Intelligent caching, API calls can be reduced, improving performance, and helping keep within rate limits.
+With support for Intelligent caching, API calls can be reduced, improving performance and helping keep within rate limits.
 {{% /blocks/feature %}}
 
 {{< quote class="col-lg-6" author="Tom O'Reilly" source="LinkedIn" href="https://www.linkedin.com/posts/tworeilly_how-long-does-an-api-integration-take-activity-7255212477418729472-6zk-" >}}
@@ -45,7 +45,7 @@ Enabling features that would take months to build in-house has always been the p
 {{< /quote >}}
 
 <div class="col-lg-6 py-2 px-6">
-{{< figure src="/images/animated.svg" caption="<em>Leave the integration work to Precept. You've got more important things to do.</em>" >}}
+{{< figure src="/images/animated.svg" caption="<center><em>Leave the integration work to Precept. You've got more important things to do.</em></center>" >}}
 </div>
 
 {{% /blocks/section %}}
@@ -60,13 +60,11 @@ Unlike SaaS alternatives, Precept runs entirely within your own infrastructure, 
 Sensitive data never leaves your infrastructure. Perfect for healthcare, financial, and enterprise applications.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-solid fa-piggy-bank" title="Cost Control"
-    url="https://github.com/google/docsy-example" %}}
+{{% blocks/feature icon="fa-solid fa-piggy-bank" title="Cost Control" %}}
 No per-request pricing or unexpected bills. Deploy once and handle unlimited API calls within your infrastructure.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-solid fa-lock" title="Custom Security"
-    url="https://twitter.com/GoHugoIO" %}}
+{{% blocks/feature icon="fa-solid fa-lock" title="Custom Security" %}}
 Integrate with your existing security infrastructure, VPCs, and compliance tools.
 {{% /blocks/feature %}}
 
