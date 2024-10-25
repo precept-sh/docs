@@ -1,0 +1,10 @@
+{{ $watermark := .Get "text" }}
+{{ $id := delimit (shuffle (seq 1 9)) "" }}
+<div class="watermark position-relative">
+    {{- .Inner -}}
+    <svg id="{{ $id }}" class="position-absolute top-0 start-0" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320">
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="none" font-size="2em"
+            font-family="Arial">{{ $watermark }}</text>
+    </svg>
+</div>

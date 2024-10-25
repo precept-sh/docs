@@ -81,13 +81,14 @@ Integrate with your existing security infrastructure, VPCs, and compliance tools
 
 {{% blocks/section type="row" %}}
 
-## Datapacks Marketplace
+## Integration Marketplace
 
-Precept can be extended with a plugin-style extension known as a Datapack. Datapacks provide the authentication, schemas, resolvers, and transformations required to integrate third party APIs into the Precept ecosystem.
+**Precept is extensible.** Integrations provide the authentication, schemas, resolvers, and transformations required to merge third party API features seemlessly into the Precept ecosystem.
 
+{{< watermark text="sample" >}}
 {{< cardpane >}}
 
-{{% datapack
+{{% integration
         channel-icon="fa-regular fa-credit-card"
         name="Stripe"
         by="Precept Team"
@@ -96,9 +97,9 @@ Precept can be extended with a plugin-style extension known as a Datapack. Datap
         installs="10k"
         tags="Verified,Payment" %}}
 Complete Stripe API integration with support for payments, subscriptions, and webhooks.
-{{% /datapack %}}
+{{% /integration %}}
 
-{{% datapack
+{{% integration
         channel-icon="fa-solid fa-envelope"
         name="SendGrid"
         by="Proof Partners"
@@ -107,9 +108,9 @@ Complete Stripe API integration with support for payments, subscriptions, and we
         installs="5k"
         tags="Official,Email" %}}
 Official SendGrid integration with email templates, analytics, and delivery tracking.
-{{% /datapack %}}
+{{% /integration %}}
 
-{{% datapack
+{{% integration
         channel-icon="fa-solid fa-lock"
         name="Auth0"
         by="Community"
@@ -118,9 +119,9 @@ Official SendGrid integration with email templates, analytics, and delivery trac
         installs="2k"
         tags="Auth,Popular" %}}
 Seamless authentication and user management with Auth0's powerful platform.
-{{% /datapack %}}
+{{% /integration %}}
 
-{{% datapack
+{{% integration
         channel-icon="fa-solid fa-box"
         name="S3"
         by="AWS"
@@ -129,15 +130,16 @@ Seamless authentication and user management with Auth0's powerful platform.
         installs="8k"
         tags="Official,Storage,New" %}}
 Official AWS S3 integration with support for all S3 operations and event handling.
-{{% /datapack %}}
+{{% /integration %}}
 
 {{< /cardpane >}}
+{{< /watermark >}}
 
-{{< button color="info" href="/marketplace" icon="fa-solid fa-arrow-alt-circle-right" >}}
+{{< button color="primary" href="/marketplace" icon="fa-solid fa-arrow-alt-circle-right" >}}
   See all available Integrations
 {{< /button >}}
 
-Or create your own plugin using the [Datapack Development Guide](/docs/sdk)
+Don't see the integration you need, or want to integrate your private API for an even better experience? Create your own plugin using the <a class="icon-link" href="/docs/integrations/sdk" ><i class="fa-solid fa-pen-nib"></i>Integration SDK</a>. Or use <a class="icon-link" href="/docs/integrations/ai"><i class="fa-solid fa-robot"></i>Precept AI  (Coming soon)</a> to instantly build a working integration for any existing API.
 
 {{% /blocks/section %}}
 
