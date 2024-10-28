@@ -1,32 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400">
+  <!-- Define the gradient for the pulse effect -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#4B5563" />
-    </marker>
-    <marker id="responseArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280" />
-    </marker>
+    <linearGradient id="red-comet" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="rgb(255,0,0)" stop-opacity="0"></stop>
+        <stop offset="75%" stop-color="rgb(255,0,0)" stop-opacity=".8"></stop>
+        <stop offset="100%" stop-color="rgb(255,0,0)" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient id="red-pulse" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(255,0,0)" stop-opacity="0">
+        <animate attributeName="offset" values="-1;1" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgb(255,0,0)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="rgb(255,0,0)" stop-opacity=".8">
+        <animate attributeName="offset" values="-0.5;1.5" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgba(255,0,0)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="rgb(255,0,0)" stop-opacity="0">
+        <animate attributeName="offset" values="0;2" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgb(255,0,0)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="green-pulse" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(0,255,0)" stop-opacity="0">
+        <animate attributeName="offset" values="-1;1" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,255,0)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="rgb(0,255,0)" stop-opacity=".8">
+        <animate attributeName="offset" values="-0.5;1.5" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgba(0,255,0)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="rgb(0,255,0)" stop-opacity="0">
+        <animate attributeName="offset" values="0;2" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,255,0)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="blue-pulse" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(0,0,255)" stop-opacity="0">
+        <animate attributeName="offset" values="-1;1" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,0,255)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="rgb(0,0,255)" stop-opacity=".8">
+        <animate attributeName="offset" values="-0.5;1.5" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgba(0,0,255)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="rgb(0,0,255)" stop-opacity="0">
+        <animate attributeName="offset" values="0;2" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,0,255)" dur="2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
   </defs>
-
-  <!-- Background boxes -->
   <g id="your-app">
-    <rect x="50" y="150" width="150" height="100" rx="10" fill="#E5E7EB" />
+    <rect x="50" y="100" width="150" height="200" fill="#e5e7eb" rx="10" />
     <text x="125" y="200" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
       Your App
     </text>
-    <line x1="200" y1="190" x2="325" y2="190" stroke="#4B5563" stroke-width="2" marker-end="url(#arrowhead)" />
-    <line x1="325" y1="210" x2="200" y2="210" stroke="#6B7280" stroke-width="2" stroke-dasharray="4" marker-end="url(#responseArrow)" />
   </g>
-
   <g id="precept">
-    <rect x="325" y="100" width="150" height="200" rx="10" fill="#818CF8" />
-    <!-- <text x="400" y="205" text-anchor="middle" fill="white" font-family="sans-serif" font-size="14">
-      Precept
-    </text> -->
-    <text x="400" y="260" text-anchor="middle" fill="white" font-family="sans-serif" font-size="14">
+    <rect x="300" y="75" width="150" height="250" fill="#818CF8aa" rx="10" />
+    <text x="375" y="300" text-anchor="middle" fill="white" font-family="sans-serif" font-size="14">
       Precept
     </text>
-    <g id="logo" transform="translate(375 160) scale(.5)">
+    <g id="logo" transform="translate(350 160) scale(.5)">
       <path d="M12.0898 148L37.1875 5.8125H72.832C85.9831 5.8125 95.0977 9.65365 100.176 17.3359C105.319 24.9531 106.816 34.7188 104.668 46.6328C102.585 58.5469 97.6367 68.3776 89.8242 76.125C82.0117 83.8073 71.5299 87.6484 58.3789 87.6484H30.1562L19.5117 148H12.0898ZM31.4258 80.9102H59.1602C70.6836 80.9102 79.4401 77.6224 85.4297 71.0469C91.4844 64.4062 95.3581 56.3008 97.0508 46.7305C98.8086 37.0951 97.7995 29.0221 94.0234 22.5117C90.3125 15.9362 82.7279 12.6159 71.2695 12.5508H43.4375L31.4258 80.9102Z" fill="#000000"/>
       <path d="M32 135C32 143.837 24.8366 151 16 151C7.16344 151 0 143.837 0 135C0 126.163 7.16344 119 16 119C24.8366 119 32 126.163 32 135Z" fill="#000000"/>
       <path d="M46 81C46 89.8366 38.8366 97 30 97C21.1634 97 14 89.8366 14 81C14 72.1634 21.1634 65 30 65C38.8366 65 46 72.1634 46 81Z" fill="#000000"/>
@@ -36,69 +70,61 @@
     </g>
   </g>
 
-  <g id="apis">
-    <rect x="600" y="50" width="150" height="300" rx="10" fill="#E5E7EB" />
+  <line id="firewall" x1="550" x2="550" y1="50" y2="350" stroke="grey" stroke-width="2" stroke-dasharray="15" />
 
-    <text x="675" y="125" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
+  <g id="red-api">
+    <rect x="650" y="100" width="150" height="50" fill="#e5e7eb" rx="10" />
+    <text x="725" y="125" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
       Payment API
     </text>
-    <line x1="475" y1="120" x2="600" y2="120" stroke="#4B5563" stroke-width="2" marker-end="url(#arrowhead)" />
-    <line x1="600" y1="130" x2="475" y2="130" stroke="#6B7280" stroke-width="2" stroke-dasharray="4" marker-end="url(#responseArrow)" />
-
-    <text x="675" y="200" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
+  </g>
+  <g id="green-api">
+    <rect x="650" y="175" width="150" height="50" fill="#e5e7eb" rx="10" />
+    <text x="725" y="200" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
       Email API
     </text>
-    <line x1="475" y1="195" x2="600" y2="195" stroke="#4B5563" stroke-width="2" marker-end="url(#arrowhead)" />
-    <line x1="600" y1="205" x2="475" y2="205" stroke="#6B7280" stroke-width="2" stroke-dasharray="4" marker-end="url(#responseArrow)" />
-
-    <text x="675" y="275" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
+  </g>
+  <g id="blue-api">
+    <rect x="650" y="250" width="150" height="50" fill="#e5e7eb"  rx="10" />
+    <text x="725" y="275" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
       Storage API
     </text>
-    <line x1="475" y1="270" x2="600" y2="270" stroke="#4B5563" stroke-width="2" marker-end="url(#arrowhead)" />
-    <line x1="600" y1="280" x2="475" y2="280" stroke="#6B7280" stroke-width="2" stroke-dasharray="4" marker-end="url(#responseArrow)" />
   </g>
-
-  <polygon id="api-1-packet" fill="#10B981" points="-9 0  -9 9  9 9  9 0  9 -9  -9 -9">
-    <animate attributeName="points" dur="6s" repeatCount="indefinite" values="-9 0  -9   9      9   9      9 0  9   -9      -9   -9;
-              -9 0  -9   9      9   9      9 0  9   -9      -9   -9;
-              -9 0  -4.5 7.794  4.5 7.794  9 0  4.5 -7.794  -4.5 -7.794;
-              -9 0  -4.5 7.794  4.5 7.794  9 0  4.5 -7.794  -4.5 -7.794;
-              -9 0  -9   9      9   9      9 0  9   -9      -9   -9;
-              -9 0  -9   9      9   9      9 0  9   -9      -9   -9;" keyTimes="0; 0.2; 0.3; 0.7; 0.8; 1" />
-    <animateMotion path="M200,190 h125 l150,-70 h125 m 0,10 h-125 l-150,80 h-125" dur="6s" repeatCount="indefinite" />
-  </polygon>
-
-  <polygon id="api-2-packet" fill="#EC4899" points="-9 0  -9 9  9 9  9 0  9 -9  -9 -9" transform="rotate(90)">
-    <animate attributeName="points" dur="6s" begin="1.5s" repeatCount="indefinite" values="-9 0  -9 9      9   9      9 0  9   -9      -9 -9;
-              -9 0  -9 9      9   9      9 0  9   -9      -9 -9;
-              -9 0  -1 1.732  4.5 7.794  2 0  4.5 -7.794  -1 -1.732;
-              -9 0  -1 1.732  4.5 7.794  2 0  4.5 -7.794  -1 -1.732;
-              -9 0  -9 9      9   9      9 0  9   -9      -9 -9;
-              -9 0  -9 9      9   9      9 0  9   -9      -9 -9;" keyTimes="0; 0.2; 0.3; 0.7; 0.8; 1" />
-    <animateMotion path="M200,190 h125 l150,5 h125 m 0,10 h-125 l-150,5 h-125" dur="6s" begin="1.5s" repeatCount="indefinite" />
-  </polygon>
-  <polygon id="api-3-packet" fill="#F59E0B" transform="rotate(-90)" points="-9 0  -9 9  9 9  9 0  9 -9  -9 -9">
-    <animate attributeName="points" dur="6s" begin="3s" repeatCount="indefinite" values="-9   0  -9 9  9 9  9 0  9   -9  -9 -9;
-              -9   0  -9 9  9 9  9 0  9   -9  -9 -9;
-              -4.5 0  -9 9  0 9  9 9  4.5  0   0 -9;
-              -4.5 0  -9 9  0 9  9 9  4.5  0   0 -9;
-              -9   0  -9 9  9 9  9 0  9   -9  -9 -9;
-              -9   0  -9 9  9 9  9 0  9   -9  -9 -9;" keyTimes="0; 0.2; 0.3; 0.7; 0.8; 1" />
-    <animateMotion path="M200,190 h125 l150,80 h125 m 0,10 h-125 l-150,-70 h-125" dur="6s" begin="3s" repeatCount="indefinite" />
-  </polygon>
-
-  <!-- Legend -->
-  <rect x="50" y="20" width="120" height="100" rx="5" fill="white" stroke="#E5E7EB" />
-  <circle cx="65" cy="40" r="6" fill="#10B981" />
-  <text x="80" y="45" fill="#374151" font-family="sans-serif" font-size="12">
-    Payment
-  </text>
-  <circle cx="65" cy="65" r="6" fill="#EC4899" />
-  <text x="80" y="70" fill="#374151" font-family="sans-serif" font-size="12">
-    Email
-  </text>
-  <circle cx="65" cy="90" r="6" fill="#F59E0B" />
-  <text x="80" y="95" fill="#374151" font-family="sans-serif" font-size="12">
-    Storage
-  </text>
+  <!-- Base path (black background line) -->
+  <!-- <path id="red-path" d="M 200 190 
+           L 325 190 
+           C 375 190, 425 120, 475 120
+           L 800 120" 
+        fill="none" 
+        stroke="black" 
+        stroke-width="4"/>
+  Animated pulse path -->
+  <path id="red-path" 
+        d="M 200 200 
+           L 300 200 
+           C 350 200, 400 125, 450 125
+           L 650 125" 
+        fill="none" 
+        stroke="url(#red-pulse)" 
+        stroke-width="6">
+    <animate attributeName="display" values="initial;none;none" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path id="green-path"
+        d="M 200 200 
+           L 650 200" 
+        fill="none" 
+        stroke="url(#green-pulse)" 
+        stroke-width="6">
+        <animate attributeName="display" values="none;initial;none" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path id="blue-path" 
+        d="M 200 200 
+           L 300 200 
+           C 350 200, 400 275, 450 275
+           L 650 275" 
+        fill="none" 
+        stroke="url(#blue-pulse)"
+        stroke-width="6">
+    <animate attributeName="display" values="none;none;initial" dur="6s" repeatCount="indefinite"/>
+  </path> 
 </svg>
