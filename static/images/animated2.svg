@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400">
+    <!-- Define the gradient for the pulse effect -->
+    <defs>
+        <linearGradient id="red-pulse-visible" gradientUnits="userSpaceOnUse" x1="0" x2="750">
+            <stop offset="0" stop-color="rgba(255,255,255,.8)"></stop>
+            <stop offset=".4" stop-color="rgba(255,255,255,.8)"></stop>
+            <stop offset=".6" stop-color="rgba(255,0,0,.8)"></stop>
+            <stop offset="1" stop-color="rgba(255,0,0,.8)"></stop>
+        </linearGradient>
+        <linearGradient id="green-pulse-visible" gradientUnits="userSpaceOnUse" x1="0" x2="750">
+            <stop offset="0" stop-color="rgba(255,255,255,.8)"></stop>
+            <stop offset=".4" stop-color="rgba(255,255,255,.8)"></stop>
+            <stop offset=".6" stop-color="rgba(0,255,0,.8)"></stop>
+            <stop offset="1" stop-color="rgba(0,255,0,.8)"></stop>
+        </linearGradient>
+        <linearGradient id="blue-pulse-visible" gradientUnits="userSpaceOnUse" x1="0" x2="750">
+            <stop offset="0" stop-color="rgba(255,255,255,.8)"></stop>
+            <stop offset=".4" stop-color="rgba(255,255,255,.8)"></stop>
+            <stop offset=".6" stop-color="rgba(0,0,255,.8)"></stop>
+            <stop offset="1" stop-color="rgba(0,0,255,.8)"></stop>
+        </linearGradient>
+        <linearGradient id="red-pulse" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="rgb(255,0,0)" stop-opacity="0">
+                <animate attributeName="offset" values="-1;1" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgb(255,0,0)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="50%" stop-color="rgb(255,0,0)" stop-opacity=".8">
+                <animate attributeName="offset" values="-0.5;1.5" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgba(255,0,0)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="100%" stop-color="rgb(255,0,0)" stop-opacity="0">
+                <animate attributeName="offset" values="0;2" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgb(255,0,0)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+        </linearGradient>
+        <linearGradient id="green-pulse" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="rgb(0,255,0)" stop-opacity="0">
+                <animate attributeName="offset" values="-1;1" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,255,0)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="50%" stop-color="rgb(0,255,0)" stop-opacity=".8">
+                <animate attributeName="offset" values="-0.5;1.5" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgba(0,255,0)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="100%" stop-color="rgb(0,255,0)" stop-opacity="0">
+                <animate attributeName="offset" values="0;2" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,255,0)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+        </linearGradient>
+        <linearGradient id="blue-pulse" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="rgb(0,0,255)" stop-opacity="0">
+                <animate attributeName="offset" values="-1;1" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,0,255)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="50%" stop-color="rgb(0,0,255)" stop-opacity=".8">
+                <animate attributeName="offset" values="-0.5;1.5" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgba(0,0,255)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="100%" stop-color="rgb(0,0,255)" stop-opacity="0">
+                <animate attributeName="offset" values="0;2" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="stop-color" values="rgb(255,255,255);rgb(0,0,255)" dur="2s" repeatCount="indefinite"/>
+            </stop>
+        </linearGradient>
+    </defs>
+    <!-- Animated pulse path -->
+    <path id="red-path" d="M 200 200 
+           L 300 200 
+           C 350 200, 400 125, 450 125
+           L 650 125" fill="none" stroke="url(#red-pulse-visible)" stroke-width="6">
+        <animate attributeName="display" values="initial;none;none" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;.8;0;0" keyTimes="0;.4;.5;.7;1" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path id="green-path" d="M 200 200 
+           L 650 200" fill="none" stroke="url(#green-pulse-visible)" stroke-width="6">
+        <animate attributeName="display" values="none;initial;none" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;.8;0;0" keyTimes="0;.4;.5;.7;1" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path id="blue-path" d="M 200 200 
+           L 300 200 
+           C 350 200, 400 275, 450 275
+           L 650 275" fill="none" stroke="url(#blue-pulse-visible)" stroke-width="6">
+        <animate attributeName="display" values="none;none;initial" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;.8;0;0" keyTimes="0;.4;.5;.7;1" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <g id="your-app">
+        <rect x="50" y="100" width="150" height="200" fill="#e5e7eb" rx="10" />
+        <text x="125" y="120" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
+      Your App
+        </text>
+        <rect x="55" y="135" width="140" height="160" fill="#374151" rx="8" />
+        <g>
+            <foreignObject x="60" y="125" width="135" height="170">
+                <pre xmlns="http://www.w3.org/1999/xhtml" style="font-family: monospace; font-size: 12px; color:#e5e7ebbb;">
+call PaymentAPI {
+  makePayment {
+    ...
+  }
+}
+                </pre>
+            </foreignObject>
+            <animate attributeName="display" values="initial;none;none" dur="6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2s" repeatCount="indefinite"/>
+        </g>
+        <g>
+            <foreignObject x="60" y="125" width="135" height="170">
+                <pre xmlns="http://www.w3.org/1999/xhtml" style="font-family: monospace; font-size: 12px; color:#e5e7ebbb;">
+call EmailAPI {
+  sendEmail {
+    ...
+  }
+}
+                </pre>
+            </foreignObject>
+            <animate attributeName="display" values="none;initial;none" dur="6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2s" repeatCount="indefinite"/>
+        </g>
+        <g>
+            <foreignObject x="60" y="125" width="135" height="170">
+                <pre xmlns="http://www.w3.org/1999/xhtml" style="font-family: monospace; font-size: 12px; color:#e5e7ebbb;">
+call StorageAPI {
+  listFiles {
+    ...
+  }
+}
+                </pre>
+            </foreignObject>
+            <animate attributeName="display" values="none;none;initial" dur="6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2s" repeatCount="indefinite"/>
+        </g>
+    </g>
+
+    <line id="firewall" x1="550" x2="550" y1="50" y2="350" stroke="grey" stroke-width="2" stroke-dasharray="15" />
+
+    <g id="red-api">
+        <rect x="650" y="100" width="150" height="50" fill="#e5e7eb" rx="10" />
+        <text x="725" y="125" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
+      Payment API
+        </text>
+    </g>
+    <g id="green-api">
+        <rect x="650" y="175" width="150" height="50" fill="#e5e7eb" rx="10" />
+        <text x="725" y="200" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
+      Email API
+        </text>
+    </g>
+    <g id="blue-api">
+        <rect x="650" y="250" width="150" height="50" fill="#e5e7eb" rx="10" />
+        <text x="725" y="275" text-anchor="middle" alignment-baseline="middle" fill="#374151" font-family="sans-serif" font-size="14">
+      Storage API
+        </text>
+    </g>
+
+    <g id="precept">
+        <rect x="300" y="75" width="150" height="250" fill="#818CF8aa" rx="10" />
+        <text x="375" y="300" text-anchor="middle" fill="#e5e7eb" font-family="sans-serif" font-size="14">
+      Precept
+        </text>
+        <g id="logo" transform="translate(350 160) scale(.5)">
+            <path d="M12.0898 148L37.1875 5.8125H72.832C85.9831 5.8125 95.0977 9.65365 100.176 17.3359C105.319 24.9531 106.816 34.7188 104.668 46.6328C102.585 58.5469 97.6367 68.3776 89.8242 76.125C82.0117 83.8073 71.5299 87.6484 58.3789 87.6484H30.1562L19.5117 148H12.0898ZM31.4258 80.9102H59.1602C70.6836 80.9102 79.4401 77.6224 85.4297 71.0469C91.4844 64.4062 95.3581 56.3008 97.0508 46.7305C98.8086 37.0951 97.7995 29.0221 94.0234 22.5117C90.3125 15.9362 82.7279 12.6159 71.2695 12.5508H43.4375L31.4258 80.9102Z" fill="#000000"/>
+            <path d="M32 135C32 143.837 24.8366 151 16 151C7.16344 151 0 143.837 0 135C0 126.163 7.16344 119 16 119C24.8366 119 32 126.163 32 135Z" fill="#000000"/>
+            <path d="M46 81C46 89.8366 38.8366 97 30 97C21.1634 97 14 89.8366 14 81C14 72.1634 21.1634 65 30 65C38.8366 65 46 72.1634 46 81Z" fill="#000000"/>
+            <path d="M60 16C60 24.8366 52.8366 32 44 32C35.1634 32 28 24.8366 28 16C28 7.16344 35.1634 0 44 0C52.8366 0 60 7.16344 60 16Z" fill="#000000"/>
+            <path d="M115 16C115 24.8366 107.837 32 99 32C90.1634 32 83 24.8366 83 16C83 7.16344 90.1634 0 99 0C107.837 0 115 7.16344 115 16Z" fill="#000000"/>
+            <path d="M101 75C101 83.8366 93.8366 91 85 91C76.1634 91 69 83.8366 69 75C69 66.1634 76.1634 59 85 59C93.8366 59 101 66.1634 101 75Z" fill="#000000"/>
+        </g>
+    </g>
+
+</svg>

@@ -45,7 +45,7 @@ Enabling features that would take months to build in-house has always been the p
 {{< /quote >}}
 
 <div class="col-lg-6 py-2 px-6">
-{{< figure src="/images/animated.svg" caption="<center><em>Leave the integration work to Precept. You've got more important things to do.</em></center>" >}}
+{{< figure src="/images/animated2.svg" caption="<center><em>Leave the integration work to Precept. You've got more important things to do.</em></center>" >}}
 </div>
 
 {{% /blocks/section %}}
