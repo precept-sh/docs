@@ -3,6 +3,12 @@ date = '2024-10-23T10:20:56-04:00'
 title = 'Precept'
 +++
 
+{{< modal id="intro" title="Precept is in Preview mode" >}}
+Although Precept has been in enterprise production environments for a few years, we are getting ready to release it to the general public. This site is a work in progress as we prepare for the official release.
+
+For the history of Precept see [about](/bout). For more information contact us at [info@precept.sh](mailto:info@precept.sh?subject=learn+more).
+{{< /modal >}}
+
 {{< blocks/cover title="Introducing Precept" image_anchor="top" height="full" >}}
 
 One unified interface for all your API integrations.
@@ -11,13 +17,13 @@ Stop juggling multiple API implementations. Start building with a single, consis
 { .mb-5 }
 
 {{< button color="primary" href="/docs/get-started" icon="fa-solid fa-arrow-alt-circle-right">}}
-  Get Started
+Get Started
 {{</ button >}}
 
-{{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="primary" %}}
+
 <!-- ## Why Precept? -->
 
 Managing multiple third-party API integrations is complex, time-consuming, and error-prone.
@@ -68,13 +74,14 @@ No per-request pricing or unexpected bills. Deploy once and handle unlimited API
 Integrate with your existing security infrastructure, VPCs, and compliance tools.
 {{% /blocks/feature %}}
 
-| Feature             | Precept                                               | SaaS Alternatives                              |
-|:--------------------|:------------------------------------------------------|:-----------------------------------------------|
+| Feature             | Precept                                            | SaaS Alternatives                           |
+| :------------------ | :------------------------------------------------- | :------------------------------------------ |
 | **Data Privacy**    | :heavy_check_mark: Complete control over data flow | :x: Data passes through third-party servers |
 | **Pricing**         | :heavy_check_mark: One-time licensing cost         | :x: Per-request pricing                     |
 | **Deployment**      | :heavy_check_mark: Your infrastructure             | :x: Vendor infrastructure                   |
 | **Customization**   | :heavy_check_mark: Full access to source code      | :x: Limited to vendor features              |
 | **Network Control** | :heavy_check_mark: Behind your firewall            | :x: External service                        |
+
 { .w-auto .mx-auto }
 
 {{% /blocks/section %}}
@@ -136,10 +143,10 @@ Official AWS S3 integration with support for all S3 operations and event handlin
 {{< /watermark >}}
 
 {{< button color="primary" href="/marketplace" icon="fa-solid fa-arrow-alt-circle-right" >}}
-  See all available Integrations
+See all available Integrations
 {{< /button >}}
 
-Don't see the integration you need, or want to integrate your private API for an even better experience? Create your own plugin using the <a class="icon-link" href="/docs/integrations/sdk" ><i class="fa-solid fa-pen-nib"></i>Integration SDK</a>. Or use <a class="icon-link" href="/docs/integrations/ai"><i class="fa-solid fa-robot"></i>Precept AI  (Coming soon)</a> to instantly build a working integration for any existing API.
+Don't see the integration you need, or want to integrate your private API for an even better experience? Create your own plugin using the <a class="icon-link" href="/docs/integrations/sdk" ><i class="fa-solid fa-pen-nib"></i>Integration SDK</a>. Or use <a class="icon-link" href="/docs/integrations/ai"><i class="fa-solid fa-robot"></i>Precept AI (Coming soon)</a> to instantly build a working integration for any existing API.
 
 {{% /blocks/section %}}
 

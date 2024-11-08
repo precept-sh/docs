@@ -1,0 +1,12 @@
+<script src="https://cdn.jsdelivr.net/gh/sprucejoy/cookie-consent-autoblock-gdpr/cookie-consent.js"
+    crossorigin="anonymous"></script>
+<script>
+    window.addEventListener('load', function () {
+        window.cookieStore.get('intro').then((cookie) => {
+            if (!cookie) {
+                new bootstrap.Modal(document.getElementById('intro')).show();
+                window.cookieStore.set('intro', true);
+            }
+        });
+    });
+</script>
