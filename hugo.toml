@@ -14,6 +14,10 @@ enableRobotsTXT = true
 
 enableEmoji = true
 
+[services]
+[services.googleAnalytics]
+id = 'G-HXR4W4V64Z'
+
 [module]
 proxy = "direct"
 [module.hugoVersion]
