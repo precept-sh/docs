@@ -20,6 +20,8 @@ Stop juggling multiple API implementations. Start building with a single, consis
 Get Started
 {{</ button >}}
 
+{{< blocks/level-down color="info" >}}
+
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="primary" %}}
