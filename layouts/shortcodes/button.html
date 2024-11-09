@@ -4,7 +4,7 @@
 {{ end }}
 {{ $href := .Get "href" }}
 
-<a class="btn btn-lg {{ $color }} me-3 mb-4" href="{{ $href }}" role="button">
+<a class="btn btn-lg {{ $color }} mx-2 mb-4" href="{{ $href }}" role="button">
     {{- .Inner -}}
     {{- with .Get "icon" -}}<i class="{{ . }} ms-2"></i>{{- end -}}
 </a>

@@ -83,7 +83,6 @@ Integrate with your existing security infrastructure, VPCs, and compliance tools
 | **Deployment**      | :heavy_check_mark: Your infrastructure             | :x: Vendor infrastructure                   |
 | **Customization**   | :heavy_check_mark: Full access to source code      | :x: Limited to vendor features              |
 | **Network Control** | :heavy_check_mark: Behind your firewall            | :x: External service                        |
-
 { .w-auto .mx-auto }
 
 {{% /blocks/section %}}
@@ -94,7 +93,7 @@ Integrate with your existing security infrastructure, VPCs, and compliance tools
 
 **Precept is extensible.** Integrations provide the authentication, schemas, resolvers, and transformations required to merge third party API features seemlessly into the Precept ecosystem.
 
-{{< watermark text="sample" >}}
+{{< watermark text="examples" >}}
 {{< cardpane >}}
 
 {{% integration

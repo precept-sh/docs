@@ -19731,6 +19731,7 @@ div.drawioframe {
 
 .td-home .td-card-group {
   margin-left: auto !important;
-  margin-right: auto !important; }
+  margin-right: auto !important;
+  max-width: 100% !important; }
 
 /*# sourceMappingURL=main.css.map */
