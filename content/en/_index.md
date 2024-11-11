@@ -6,7 +6,7 @@ title = 'Precept'
 {{< modal id="intro" title="Precept is in Preview mode" >}}
 Although Precept has been in enterprise production environments for a few years, we are getting ready to release it to the general public. This site is a work in progress as we prepare for the official release.
 
-For the history of Precept see [about](/bout). For more information contact us at [info@precept.sh](mailto:info@precept.sh?subject=learn+more).
+For the history of Precept see [about](/about). For more information contact us at [info@precept.sh](mailto:info@precept.sh?subject=learn+more).
 {{< /modal >}}
 
 {{< blocks/cover title="Introducing Precept" image_anchor="top" height="full" >}}
