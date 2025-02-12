@@ -2,12 +2,13 @@
 date = '2024-10-23T10:20:56-04:00'
 title = 'Precept'
 +++
-
+<!--
 {{< modal id="intro" title="Precept is in Preview mode" >}}
 Although Precept has been in enterprise production environments for a few years, we are getting ready to release it to the general public. This site is a work in progress as we prepare for the official release.
 
 For the history of Precept see [about](/about). For more information contact us at [info@precept.sh](mailto:info@precept.sh?subject=learn+more).
 {{< /modal >}}
+-->
 
 {{< blocks/cover title="Introducing Precept" image_anchor="top" height="full" >}}
 
@@ -16,9 +17,11 @@ One unified interface for all your API integrations.
 Stop juggling multiple API implementations. Start building with a single, consistent interface.
 { .mb-5 }
 
+<!--
 {{< button color="primary" href="/docs/get-started" icon="fa-solid fa-arrow-alt-circle-right">}}
 Get Started
 {{</ button >}}
+-->
 
 {{< blocks/link-down color="info" >}}
 
@@ -57,7 +60,7 @@ Enabling features that would take months to build in-house has always been the p
 </div>
 
 {{% /blocks/section %}}
-
+<!--
 {{% blocks/section type="row" %}}
 
 ## Runs Within Your Environment
@@ -86,7 +89,9 @@ Integrate with your existing security infrastructure, VPCs, and compliance tools
 { .w-auto .mx-auto }
 
 {{% /blocks/section %}}
+-->
 
+<!--
 {{% blocks/section type="row" %}}
 
 ## Integration Marketplace
@@ -150,7 +155,9 @@ See all available Integrations
 Don't see the integration you need, or want to integrate your private API for an even better experience? Create your own plugin using the <a class="icon-link" href="/docs/integrations/sdk" ><i class="fa-solid fa-pen-nib"></i>Integration SDK</a>. Or use <a class="icon-link" href="/docs/integrations/ai"><i class="fa-solid fa-robot"></i>Precept AI (Coming soon)</a> to instantly build a working integration for any existing API.
 
 {{% /blocks/section %}}
+-->
 
+<!--
 {{% blocks/section type="col" %}}
 
 ## Ready to Take Control?
@@ -164,3 +171,4 @@ Start integrating your services with Precept today.
 {{< /button >}}
 </div>
 {{% /blocks/section %}}
+-->
