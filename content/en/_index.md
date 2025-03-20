@@ -12,9 +12,9 @@ For the history of Precept see [about](/about). For more information contact us 
 
 {{< blocks/cover title="Introducing Precept" image_anchor="top" height="full" >}}
 
-One unified interface for all your API integrations.
+Precept is the leading AI-driven integration platform, unlocking personalized experiences while eliminating the need for costly integrations across third-party applications.
 
-Stop juggling multiple API implementations. Start building with a single, consistent interface.
+Precept solves for the prohibitive cost, eliminates Development resources and the valuable time lost when building third-party integrations.
 { .mb-5 }
 
 <!--
